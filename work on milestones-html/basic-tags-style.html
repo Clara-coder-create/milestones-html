@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--this will link the stylesheet to the html-->
+  <link rel="stylesheet" href="basic-tags-style.css">
   <title>Document</title>
 </head>
 <body>
   <h1>Basic Tags</h1>
-    <section block-level>
+    <section block-level id="text1">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lacus quis est pharetra venenatis
+        <h2 id="secondH">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lacus quis est pharetra venenatis</h2>
         <blockquote cite = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">The blockquote HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the cite element.</blockquote>
-        <pre>The                      represents
+        <pre>            The             represents
                   pre        element              preformatted
-                       HTML                                     text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or "monospaced, font. Whitespace inside this element is displayed as written.</pre>
-<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre-->
+                       HTML                                     text which is to
+              be presented exactly as written in the HTML file. The text is typically rendered
+                             using a non-proportional, or "monospaced,
+              font. Whitespace inside this element is displayed as written.</pre>
+ <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre-->
       </p>
     </section>
 
-    <section inline.text.styling>
-      <p>
+    <section inline.text.styling id="text2">
+      <p class="blue">
           The em tag emphasizes a certain part of the text. Example: What do you <em>really</em> mean?
           The i tag will italize the text. Example: <i>And outside the sun was shining.</i>
           The strong and b tag will make the text bold. Example: Lightning <b>bolts</b> were raining from the sky.
@@ -28,20 +33,20 @@
       </p>
     </section>
 
-    <section a.tag>
+    <section a.tag id="text3">
         <p>
           The a tag defines a hyperlink to something. It can be a website, image, video or any other type of media. What exactly will be anchored is defined by the attributes.
         </p>
     </section>
 
-    <section img.tag>
+    <section img.tag id="text4" class="blue">
       <p>The image tag embeds an image into the html. It can have a class, src and alt. The src is the source of the image (it is easiest to use a picture that is saved on the same folder as the html). The alt attribute is a text that will appear should the image not load.
         There are many other <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">attributes</a> that can be used.
       </p>
     </section>
 
-    <sectioin header.tag>
-      <p>There are different header tags that control the size of the text.
+    <sectioin header.tag id="text5" >
+      <p class="border">There are different header tags that control the size of the text.
          The tags range from h1 (biggest) to h6 (smallest).
       </p>
         <h1>h1:Phasellus laoreet velit vitae nisi iaculis sollicitudin.</h1>
@@ -52,7 +57,7 @@
         <h6>h6:Duis pretium enim sed tortor tincidunt, vitae rhoncus eros iaculis.</h6>
     </sectioin>
 
-    <section lists>
+    <section lists id="text6">
 <!--to create an unordered list use the <ul> tag to create the list and then <list> tags to create elements in your list.-->
       <ul>
         <li>aitgalk</li>
@@ -71,7 +76,7 @@
         <li>Weil es so gut läuft gibts vier</li>
       </ol>
 
-      <ul>
+      <ul class="blue">
   <!--a list element can be a picture, hyperlink, paragraph...-->
         <li>
           <p>Suspendisse pulvinar sem tortor, a congue enim fermentum vitae. Etiam vehicula luctus leo. Sed mollis metus pharetra, maximus nunc et, porttitor justo. Phasellus efficitur nisi ut leo venenatis, vel semper enim aliquet. Vestibulum et lobortis justo. Sed mattis efficitur orci ut finibus. Aenean condimentum dapibus arcu, et ultricies ligula euismod eget. Mauris ut orci sed mi imperdiet tristique a vel sem.</p>
@@ -79,7 +84,7 @@
         <li>
           <p>Phasellus laoreet velit vitae nisi iaculis sollicitudin. Duis et mattis orci. Nullam sem augue, laoreet vehicula odio ut, vestibulum ultricies nunc. Quisque ac maximus nisl, non sodales elit. Duis tincidunt sapien in nulla vehicula, vitae hendrerit magna condimentum. Phasellus ullamcorper augue ac ligula egestas tristique. Duis pretium enim sed tortor tincidunt, vitae rhoncus eros iaculis. Integer posuere suscipit enim, et hendrerit ipsum eleifend in. Sed libero augue, ornare et gravida vel, scelerisque a justo. Etiam a justo ut sapien porta egestas eget at dui. In sit amet maximus erat. Curabitur consectetur urna eu nisi porttitor, vel gravida elit consectetur. Etiam semper mi sit amet placerat rutrum. Morbi lacinia molestie magna, eleifend semper orci pellentesque pellentesque.</p>
         </li>
-        <li><img class="border" src = "calm_beach.jpeg" alt = "calm beach" ></li>
+        <li><img id="image" class="border" src = "calm_beach.jpeg" alt = "calm beach" ></li>
         <li><a href= "https://link.springer.com/article/10.1007/BF03043147">An interesting article about the Wadden Sea</a></li>
       </ul>
 
@@ -100,7 +105,8 @@
 
   <!--with the <table> tag you can create a table. <tr> stands for table row, <td> for table data.
     <td> exists within the <tr>. <th> is the table Heading-->
-  <table>
+      <section id="text7">
+  <table class="border">
     <th>Find your stone</th>
     <tr>
       <td>stone</td>
@@ -163,6 +169,6 @@
         <td>kggfkh</td>
        </tr>
   </table>
-
+</section>
 </body>
 </html>

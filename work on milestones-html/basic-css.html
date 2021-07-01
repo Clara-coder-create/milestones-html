@@ -15,9 +15,12 @@
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dignissim tellus. Ut nibh magna, tempor nec nulla porttitor, porta tincidunt enim. Suspendisse sed interdum lacus. Praesent a leo cursus, auctor enim eget, malesuada nisl. Fusce sit amet vulputate odio. Morbi maximus malesuada magna at vehicula. Sed id ullamcorper nisl. Praesent pharetra viverra velit vitae lacinia. Proin vitae mauris ac massa feugiat pharetra. Integer volutpat turpis mauris, semper facilisis sem tincidunt sagittis. Nunc pharetra lorem eget justo vestibulum, at interdum justo viverra. Phasellus malesuada dui sit amet sapien feugiat, vel accumsan odio tristique. Mauris venenatis luctus dui, in convallis diam venenatis ut. Pellentesque volutpat bibendum orci a mollis.
   </p>
 
-  <h2>This is the h2 style</h2>
+  <div class="description">
+    <h2>This is the h2 style</h2>
+    <h3 id="h3">This is the h3 style</h3>
+  </div>
 
-  <h3>This is the h3 style</h3>
+
 
        <p class="background">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dignissim tellus. Ut nibh magna, tempor nec nulla porttitor, porta tincidunt enim. Suspendisse sed interdum lacus. Praesent a leo cursus, auctor enim eget, malesuada nisl. Fusce sit amet vulputate odio. Morbi maximus malesuada magna at vehicula. Sed id ullamcorper nisl. Praesent pharetra viverra velit vitae lacinia. Proin vitae mauris ac massa feugiat pharetra. Integer volutpat turpis mauris, semper facilisis sem tincidunt sagittis. Nunc pharetra lorem eget justo vestibulum, at interdum justo viverra. Phasellus malesuada dui sit amet sapien feugiat, vel accumsan odio tristique. Mauris venenatis luctus dui, in convallis diam venenatis ut. Pellentesque volutpat bibendum orci a mollis.
@@ -35,9 +38,18 @@
 
   <!--with the <style> tag you can embed css into your html and change the style-->
   <style>
+
+  .description{ /*by using a dot you can select a class. each tag within the class will be styled*/
+    line-height: 50px /*this will control the distance between the lines of text*/; letter-spacing: 10px; font-family: 'Times New Roman', Times, serif;
+  }
+
+  #h3{/*the asterix lets you get an element by "id" each id is unique*/
+    font-family: 'Big Shoulders Stencil Display', cursive /*this is a font famly from google fonts. select a style and then copy the html link and insert it above the head, then copy hte css link and insert it in the css*/;
+  }
+
    h1 {color: blue; text-align: center; text-transform: uppercase /*this will control if the text is all lowercase or uppercaasr*/;}
-   h2 {line-height: 50px /*this will control the distance between the lines of text*/; letter-spacing: 10px; font-family: 'Times New Roman', Times, serif;}
-   h3 {font-family: 'Big Shoulders Stencil Display', cursive /*this is a font famly from google fonts. select a style and then copy the html link and insert it above the head, then copy hte css link and insert it in the css*/;}
+
+
    p {font-style: italic; font-weight: 200; background-color: blue;}
    .background {border: 20px solid; border-color: orange; background-image: url("backgroundImage.jpeg"); margin: auto; padding: 20px /*added a nice border between text and the background*/;
    } /* it is important to add solid for the border to be visible on the website*/
